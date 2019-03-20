@@ -12,7 +12,7 @@ Check the packages installed in your conda env by `conda list -n <your-env-name>
 What worked for me is this tutorial on https://github.com/jupyter/jupyter/issues/245#issuecomment-287080203
 Basically, first enter your conda env, then `conda install ipykernel`, then `conda install --channel=conda-forge nb_conda_kernels`.
 
-## why is jupyter notebook behaving differently from python file, why do I get different result running twice a cell
+## why is jupyter notebook behaving differently from python file, why do I get different result running a cell twice?
 Once you run a cell, jupyter notebook save variables in your memory, that means a bunch of variables are in your memory and sometimes you might want to reset the whole notebook. If some calculation in a cell depends on variables defined in other cells, particularly defined in previously run cells, when you run a cell for a second time very likely get a different result. 
 
 
