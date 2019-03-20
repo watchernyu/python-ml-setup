@@ -4,7 +4,8 @@ Here I note down some common problems one might encounter in setting up python f
 ## my python packages are chaotic and in conflict.
 A good solution is use virtualenv, or use anaconda + anaconda's virtual env. I found this to be very effective. What is virtual env? Look at the tutorial here: https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/
 
-## I think I have correct version of package, but I installed stuff with conda but also with pip and my python is running wrong version of the package.
+## I use a conda env, I think I have correct version of package, but I installed stuff with conda but also with conda's pip and my python is running wrong version of the package.
+It's generally OK to enter a conda env, and then use pip install to install stuff. I believe the pip here is conda's pip. And the packages are correctly installed to your conda env. But sometimes you can have multiple versions of same packages in one conda env. 
 Check the packages installed in your conda env by `conda list -n <your-env-name>`, you might find that you have a package, for example numpy, with 2 different versions, one installed by pip, one by conda (it can happen sometimes, and will cause messy version conflict), you might want to simply uninstall one of them, and then make sure the only one existing is of the correct version. 
 
 ## jupyter notebook doesn't show anaconda kernels
