@@ -8,7 +8,7 @@ A good solution is use virtualenv, or use anaconda + anaconda's virtual env. I f
 Check the packages installed in your conda env by `conda list -n <your-env-name>`, you might find that you have a package, for example numpy, with 2 different versions, one installed by pip, one by conda (it can happen sometimes, and will cause messy version conflict), you might want to simply uninstall one of them, and then make sure the only one existing is of the correct version. 
 
 ## jupyter notebook doesn't show anaconda kernels
-In short, do `conda install nb_conda` in your anaconda env, or watch the 5 min tutorial here: 
+These two are not integrated well when you install them so you have to install some stuff. In short, do `conda install nb_conda` in your anaconda env, or watch the 5 min tutorial here: 
 https://www.youtube.com/watch?v=Ro9l0eapoJU
 
 ## why is jupyter notebook behaving differently from python file, why do I get different result running twice a cell
