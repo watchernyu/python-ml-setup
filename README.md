@@ -1,6 +1,8 @@
 # python-ml-setup
 Here I note down some common problems one might encounter in setting up python for machine learning. Mainly for my own reference, or if you are a student learning machine learning with python for the first time this might also help you. 
 
+For students currently in NYU Shanghai's ML class (Spring 2019), if you have general questions on python setup, you can post an issue here. Or come to my office hour.
+
 ## my python packages are chaotic and in conflict.
 A good solution is use virtualenv, or use anaconda + anaconda's virtual env. I found this to be very effective. What is virtual env? Look at the tutorial here: https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/
 
