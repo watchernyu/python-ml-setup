@@ -1,7 +1,18 @@
 # python-ml-setup
-Here I write down some common problems one might encounter in setting up python for machine learning. Mainly for my own reference, or if you are a student learning machine learning with python for the first time this might also help you. 
+Here I write down some common steps and common problems one might encounter in setting up python for machine learning. Mainly for my own reference, or if you are a student learning machine learning with python for the first time this might also help you. 
 
-For students currently in NYU Shanghai's ML class (Spring 2019), if you have general questions on python setup, you can post an issue here. Or come to my office hour.
+# IMPORTANT: PREPARE FOR YOUR FIRST PYTORCH CLASS
+(If you find difficulty on any step, then simply don't worry about it, we will talk in class. But if you can manage to get these set up by class time, it would help you understand things faster)
+Highly recommended:
+1. Download and install anaconda if you haven't. This is very easy. 
+2. Scan through this page to have a quick understanding of conda virtual environments, at least read how to create and activate environment: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+3. In mac/ubuntu, open a terminal and run `conda create -n ml python=3.6` to create a conda virutal environment. In windows, open anaconda power shell instead of windows terminal. (search "anaconda" in your windows search bar, after you installed anaconda)
+4. go to pytorch website and install pytorch in your "ml" environment (don't forget to activate it). Then, in your "ml" environment, run python and see if you can `import torch`. 
+
+Optional, but still recommended:
+1. use a more advanced IDE. My recommendation is pycharm. Install pycharm and learn about how to create a project, and how to set the correct interpreter, create a project and set it to use your virtual env's interpreter: https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html
+2. install git on your machine. 
+3. in your ml environment, install the following packages if you haven't: numpy, pandas, matplotlib, sklearn, scipy
 
 # resources for beginners
 Students come out of an ICP class, mastering the basic syntax of python, but when they start deal with more complex projects, they suffer hugely from things that are outside their code. For example, you might not have a good understanding of python path and your code simply don't run when they import stuff, or you don't know what is a virtualenv and get package conflict, or you don't know what github is and your team simply don't collaborate, or you don't know how to use a terminal, and you get lost when you connect to the hpc. It can be EXTREMELY helpful to watch a few tutorials and get a basic knowledge of these things... here are some recommendations. 
