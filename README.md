@@ -6,8 +6,9 @@ Here I write down some common steps and common problems one might encounter in s
 Highly recommended:
 1. Download and install anaconda if you haven't. This is very easy. 
 2. Scan through this page to have a quick understanding of conda virtual environments, at least read how to create and activate environment: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
-3. In mac/ubuntu, open a terminal and run `conda create -n ml python=3.6` to create a conda virutal environment. In windows, open anaconda power shell instead of windows terminal. (search "anaconda" in your windows search bar, after you installed anaconda)
-4. go to pytorch website and install pytorch in your "ml" environment (don't forget to activate it). Then, in your "ml" environment, run python and see if you can `import torch`. 
+3. In mac/ubuntu, open a terminal and run `conda create -n ml python=3.6` to create a conda virutal environment. In windows, open anaconda power shell instead of windows terminal. (search "anaconda" in your windows search bar, after you installed anaconda) If you already have a environment with python 3.6+ and pytorch 1.0+ then you can also skip these 2 steps, and just use your old environment. 
+4. go to pytorch website and install pytorch in your "ml" environment (don't forget to activate it). Then, in your "ml" environment, run python and see if you can `import torch`. If you don't have pytorch installed previously, simply install latest version. 
+5. activate ml environment, run python, try `import torch`.
 
 Optional, but still recommended:
 1. use a more advanced IDE. My recommendation is pycharm. Install pycharm and learn about how to create a project, and how to set the correct interpreter, create a project and set it to use your virtual env's interpreter: https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html
