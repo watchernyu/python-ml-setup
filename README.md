@@ -1,6 +1,8 @@
 # python-ml-setup
 Here I write down some common steps and common problems one might encounter in setting up python for machine learning. Mainly for my own reference, or if you are a student learning machine learning with python for the first time this might also help you. 
 
+CURRENT 2020 Spring ML students: if you are having difficulty setting up the environment, you can open an issue here.
+
 # IMPORTANT: PREPARE FOR YOUR FIRST PYTORCH CLASS
 (If you find difficulty on any step, then simply don't worry about it, we will talk in class. But if you can manage to get these set up by class time, it would help you understand things faster)
 Highly recommended:
