@@ -24,7 +24,7 @@ Students come out of an ICP class, mastering the basic syntax of python, but whe
 Python path, module, package:
 https://www.youtube.com/watch?v=UK97NoQK23k&t=469s
 
-# common problems
+# common python basics problems
 
 ## my python packages are chaotic and in conflict.
 A good solution is use virtualenv, or use anaconda + anaconda's virtual env. I found this to be very effective. What is virtual env? Look at the tutorial here: https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/
@@ -40,6 +40,12 @@ Basically, first enter your conda env, then `conda install ipykernel`, then `con
 ## why is jupyter notebook behaving differently from python file, why do I get different result running a cell twice?
 Once you run a cell, jupyter notebook save variables in your memory, that means a bunch of variables are in your memory and sometimes you might want to reset the whole notebook. If some calculation in a cell depends on variables defined in other cells, particularly defined in previously run cells, when you run a cell for a second time very likely get a different result. 
 
+# common pytorch, numpy problems
+
 ## I simply cannot load a file?
 Check your path. Is your program and your data in the same directory? Are you using relative path? Or absolute path? Print out your current path in your program, print out the path that you want to load your data, see if this information is the same as what you imagined. 
+
+## pytorch says I might have incorrect broadcast? What does that mean?
+Check the shape of your tensors, print them out or use debugger. For example, if you use a tensor of shape (4,1) added to a tensor of shape (4,1), you will get tensor of shape (4,1). But if you added a tensor of shape (4) to a tensor of shape (4,1), you get (4,4), which might or might not be what you want. 
+Always try to broadcast explicitly (for example, expand their shape) to avoid such problems. 
 
