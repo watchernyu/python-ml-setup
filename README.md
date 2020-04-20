@@ -49,3 +49,6 @@ Check your path. Is your program and your data in the same directory? Are you us
 Check the shape of your tensors, print them out or use debugger. For example, if you use a tensor of shape (4,1) added to a tensor of shape (4,1), you will get tensor of shape (4,1). But if you added a tensor of shape (4) to a tensor of shape (4,1), you get (4,4), which might or might not be what you want. 
 Always try to broadcast explicitly (for example, expand their shape) to avoid such problems. 
 
+## my computer suddenly got stuck, it seems my memory usage is so large that it crushes my computer?
+Check if in your code you have sth that looks like: `cumulative_loss += loss`, instead of `cumulative_loss += loss.item()`, or `cumulative_loss += loss.detach()`. If you forgot to detach your tensor in some ways, you can accumulate a huge computation graph. Pytorch might think that you want to do gradient propagation on a huge graph. And that will cost huge memory and will crush your computer. 
+
