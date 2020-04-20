@@ -16,6 +16,7 @@ Optional, but still recommended:
 1. use a more advanced IDE. My recommendation is pycharm. Install pycharm and learn about how to create a project, and how to set the correct interpreter, create a project and set it to use your virtual env's interpreter: https://www.jetbrains.com/help/pycharm/configuring-python-interpreter.html
 2. install git on your machine. 
 3. in your ml environment, install the following packages if you haven't: numpy, pandas, matplotlib, sklearn, scipy
+4. learn the super powerful pycharm debugger, make your debugging experience happier: https://www.youtube.com/watch?v=QJtWxm12Eo0
 
 # resources for beginners
 Students come out of an ICP class, mastering the basic syntax of python, but when they start deal with more complex projects, they suffer hugely from things that are outside their code. For example, you might not have a good understanding of python path and your code simply don't run when they import stuff, or you don't know what is a virtualenv and get package conflict, or you don't know what github is and your team simply don't collaborate, or you don't know how to use a terminal, and you get lost when you connect to the hpc. It can be EXTREMELY helpful to watch a few tutorials and get a basic knowledge of these things... here are some recommendations. 
