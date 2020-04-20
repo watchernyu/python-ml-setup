@@ -36,6 +36,6 @@ Basically, first enter your conda env, then `conda install ipykernel`, then `con
 ## why is jupyter notebook behaving differently from python file, why do I get different result running a cell twice?
 Once you run a cell, jupyter notebook save variables in your memory, that means a bunch of variables are in your memory and sometimes you might want to reset the whole notebook. If some calculation in a cell depends on variables defined in other cells, particularly defined in previously run cells, when you run a cell for a second time very likely get a different result. 
 
-
-
+## I simply cannot load a file?
+Check your path. Is your program and your data in the same directory? Are you using relative path? Or absolute path? Print out your current path in your program, print out the path that you want to load your data, see if this information is the same as what you imagined. 
 
