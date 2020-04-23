@@ -7,6 +7,8 @@ CURRENT 2020 Spring ML students: if you are having difficulty setting up the env
 https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html
 This is much more detailed, make sure you read it to get a better understanding of the basics.
 
+If you base environment works, then you can just use your base. But learning how virtualenv works and how packages should be organized will help you in the long run. 
+
 # IMPORTANT: PREPARE FOR YOUR FIRST PYTORCH CLASS
 (If you find difficulty on any step, then simply don't worry about it, we will talk in class. But if you can manage to get these set up by class time, it would help you understand things faster)
 Highly recommended:
@@ -39,7 +41,7 @@ Check the packages installed in your conda env by `conda list -n <your-env-name>
 
 ## jupyter notebook doesn't show anaconda kernels
 What worked for me is this tutorial on https://github.com/jupyter/jupyter/issues/245#issuecomment-287080203
-Basically, first enter your conda env, then `conda install ipykernel`, then `conda install --channel=conda-forge nb_conda_kernels`.
+Basically, first enter your conda env, then `conda install ipykernel`, then `conda install --channel=conda-forge nb_conda_kernels`. Make sure when you launch jupyter notebook, you are inside your environment! You can also install these in your base environment so that you may launch notebook in your base environment and then still see different kernels. 
 
 ## why is jupyter notebook behaving differently from python file, why do I get different result running a cell twice?
 Once you run a cell, jupyter notebook save variables in your memory, that means a bunch of variables are in your memory and sometimes you might want to reset the whole notebook. If some calculation in a cell depends on variables defined in other cells, particularly defined in previously run cells, when you run a cell for a second time very likely get a different result. 
