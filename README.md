@@ -3,6 +3,10 @@ Here I write down some common steps and common problems one might encounter in s
 
 CURRENT 2020 Spring ML students: if you are having difficulty setting up the environment, you can open an issue here.
 
+# IMPORTANT: READ THE PYTORCH OFFICIAL TUTORIAL (or at least scan through it)
+https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html
+This is much more detailed, make sure you read it to get a better understanding of the basics.
+
 # IMPORTANT: PREPARE FOR YOUR FIRST PYTORCH CLASS
 (If you find difficulty on any step, then simply don't worry about it, we will talk in class. But if you can manage to get these set up by class time, it would help you understand things faster)
 Highly recommended:
